@@ -1,3 +1,4 @@
+import SEO from '@/components/SEO';
 import { GetServerSideProps } from 'next';
 import { Title } from '../styles/pages/Home';
 
@@ -20,6 +21,11 @@ export default function Home({ recommendedProducts }: HomeProps) {
 
   return (
     <div>
+      <SEO
+        title="DevCommerce, seu local de compras"
+        shoudExcludeTitleSufix={true}
+        image="boost.png"
+      />
       <Title>Hello World</Title>
 
       <section>
